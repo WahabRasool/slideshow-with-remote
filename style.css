@@ -1,0 +1,159 @@
+body {
+    background-color: #000;
+    background-image: url(https://iili.io/2IaOjX2.jpg);
+  }
+  
+  .container {
+    margin: auto;
+    max-width: 1920px;
+    width: 90%;
+    height: auto;
+    background-color: #000;
+  }
+  
+  .dia-scherm {
+    max-width: 1920px;
+    width: 90%;
+    height: auto;
+    background-color: #000;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .dia-scherm img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /*remote control*/
+  
+  .remote {
+    position: absolute;
+    transform: rotate(7deg);
+    bottom: 5rem;
+    left: 5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    margin-left: 3rem;
+    width: 70px;
+    background: rgb(245, 250, 244);
+    background: radial-gradient(circle, rgb(80, 79, 79) 6%, rgb(48, 46, 46) 94%);
+    border: 1px solid rgb(26, 25, 25);
+    border-radius: 5px;
+    outline: 4px solid rgb(73, 73, 73);
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    font-size: 2rem;
+  }
+  
+  /*buttons*/
+  .btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+    width: 50px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  
+  .btn.green {
+    border: 2px solid #5ee73c;
+    background-color: #12aa04;
+    text-align: center;
+  }
+  
+  .btn.green:hover {
+    background-color: #5ee73c;
+  }
+  
+  .btn.blue {
+    border: 2px solid #51a9ff;
+    background-color: rgb(31, 98, 241);
+    text-align: center;
+  }
+  
+  .btn.blue:hover {
+    background-color: #93c6f8;
+  }
+  
+  #slideshowButton {
+    font-size: 1.5rem;
+  }
+  
+  .btn.red {
+    border: 2px solid rgb(175, 115, 2);
+    background-color: orange;
+    text-align: center;
+  }
+  
+  .btn.red:hover {
+    background-color: rgb(248, 220, 168);
+  }
+  
+  .brand {
+    margin-top: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    font-family: "Raileway", sans-serif;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #d3d1d1;
+    letter-spacing: 2px;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .remote {
+      position: static;
+      margin-top: 5rem;
+      padding: 0px;
+    }
+  
+    button {
+      font-size: 1.5rem;
+    }
+  
+    #slideshowButton {
+      font-size: 1.3rem;
+    }
+  
+    .btn {
+      font-size: 1.5rem;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

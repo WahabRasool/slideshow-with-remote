@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./style.css">
+    <title>slideshow with remote</title>
+</head>
+<body>
+<div class="container">
+  <div class="dia-scherm">
+
+    <div id="projectorScreen">
+      <img src="https://iili.io/2Ia4TdB.jpg" class="slide" style="display: block;">
+      <img src="https://iili.io/2IaOGJs.jpg" class="slide">
+      <img src="https://iili.io/2IaO1gn.jpg" class="slide">
+      <img src="https://iili.io/2IaOM5G.jpg" class="slide">
+      <img src="https://iili.io/2IaOVef.jpg" class="slide">
+      <!-- Voeg meer afbeeldingen toe indien nodig -->
+    </div>
+  </div>
+
+  <div class="remote controls">
+
+    <div class="btn green"><button id="nextButton" onclick="nextSlide()">&#9206;</button> </div>
+    <div class="btn blue"><button id="prevButton" onclick="prevSlide()">&#9207;</button></div>
+    <div class="btn red"><button id="slideshowButton" onclick="toggleSlideshow()">&#9199;</button></div>
+    <div class="brand">slide remote</div>
+
+  </div>
+
+  <!---------------- end container -------------------->
+</div>
+<script src="./main.js"></script>
+</body>
+</html>
